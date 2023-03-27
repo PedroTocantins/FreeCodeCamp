@@ -11,6 +11,8 @@ function increment() {
 };
 
 function save() {
-  previousEntries.innerText += count+'-';
+  previousEntries.textContent += count + ' - ';
+  count = 0;
+  countEl.textContent = count;
 }
 
